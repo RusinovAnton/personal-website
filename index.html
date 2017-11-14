@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|VT323"
+          rel="stylesheet">
+    <style>
+        body {
+            font-family: VT323, monospace;
+            font-size: 24px;
+            background-color: silver;
+            line-height: 2;
+        }
+
+        body.go-nuts {
+            background-image: url("jungle.jpg");
+            background-size: cover;
+            text-align: right;
+        }
+
+        body.go-nuts * {
+            color: #fad7f3!important;
+            text-shadow: 2px 2px 0 #000;
+        }
+
+        a {
+            color: #333;
+        }
+
+        a:visited {
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>anton rusinov</h1>
+    <ul>
+        <li><strong>github:</strong> <a rel="nofollow noreferrer" target="_blank" href="https://github.com/RusinovAnton">https://github.com/RusinovAnton</a></li>
+        <li><strong>email:</strong> <a rel="nofollow noreferrer" target="_blank" href="mailto:rusinovantondev@gmail.com">rusinovantondev@gmail.com</a></li>
+        <li><strong>npm:</strong> <a rel="nofollow noreferrer" target="_blank" href="https://www.npmjs.com/~rusinov">https://www.npmjs.com/~rusinov</a></li>
+        <li><strong>codewars:</strong> <a rel="nofollow noreferrer" target="_blank" href="https://www.codewars.com/users/RusinovAnton">https://www.codewars.com/users/RusinovAnton</a></li>
+        <li><strong>instagram:</strong> <a rel="nofollow noreferrer" target="_blank" href="https://www.instagram.com/ovvshiee/">https://www.instagram.com/ovvshiee/</a></li>
+        <li><strong>lichess:</strong> <a rel="nofollow noreferrer" target="_blank" href="https://lichess.org/@/rusinov">https://lichess.org/@/rusinov</a></li>
+        <li><strong>soundcloud:</strong> <a rel="nofollow noreferrer" target="_blank" href="https://soundcloud.com/anton-rusinov">https://soundcloud.com/anton-rusinov</a></li>
+        <li><strong>strava:</strong> <a rel="nofollow noreferrer" target="_blank" href="https://www.strava.com/athletes/23425396">https://www.strava.com/athletes/23425396</a></li>
+        <li><strong>telegram:</strong> <a rel="nofollow noreferrer" target="_blank" href="https://t.me/ovvshiee">https://t.me/ovvshiee</a></li>
+        <li><strong>twitter:</strong> <a rel="nofollow noreferrer" target="_blank" href="https://twitter.com/rusinovAntonDev">https://twitter.com/rusinovAntonDev</a></li>
+    </ul>
+
+    <script id="easter-egg" async type="text/javascript">
+      const magicSequence = [49, 51, 51, 55];
+      let index = 0;
+
+      const boo = ({ keyCode }) => {
+        if (keyCode !== magicSequence[index]) {
+          index = 0;
+          return;
+        }
+
+        if (index + 1 === magicSequence.length) {
+          document.body.classList.add('go-nuts');
+          document.body.removeEventListener('keydown', boo);
+          document.body.querySelector('#easter-egg').remove();
+
+          throw new Error('(ﾉ´･ω･)ﾉ ﾐ ┸━┸');
+        }
+
+        index++;
+      };
+
+      document.body.addEventListener('keydown', boo);
+    </script>
+</body>
+</html>
