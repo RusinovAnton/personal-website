@@ -1,0 +1,26 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RusinovAnton/website.git"
+  },
+  "author": "Rusinov Anton <rusinovantondev@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RusinovAnton/website/issues"
+  },
+  "homepage": "https://github.com/RusinovAnton/website#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "koa": "^2.4.1",
+    "koa-body": "^2.5.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  }
+}
