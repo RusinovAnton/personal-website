@@ -4,6 +4,7 @@
   "description": "Personal website",
   "main": "index.html",
   "scripts": {
+    "start": "./slack-autoinvite-app/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
