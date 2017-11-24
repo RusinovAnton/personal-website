@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 const { SLACK_URL, SLACK_TOKEN, MAIL_CHECKER_API_KEY } = process.env;
+const PORT = process.env.PORT || 5000;
 
 const request = require('request-promise');
 const Koa = require('koa');
@@ -85,4 +86,4 @@ app.use(async (ctx) => {
   }
 });
 
-app.listen(1337);
+app.listen(PORT);
