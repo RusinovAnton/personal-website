@@ -19,8 +19,8 @@ class SlackAutoInvite {
   handleSubmit(e) {
     e.preventDefault();
 
-    this.showMessage({message: 'loading...'});
-    fetch('https://google.com', {
+    this.showMessage({ message: 'loading...' });
+    fetch('https://dry-stream-45290.herokuapp.com/slack-invite', {
       body: JSON.stringify({ email: this.input.value }),
       credentials: 'same-origin',
       method: 'POST',
