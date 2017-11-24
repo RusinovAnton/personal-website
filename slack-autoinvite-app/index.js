@@ -34,7 +34,7 @@ const checkEmail = async (email) => {
 };
 
 app.use(async (ctx) => {
-  ctx.response.set('Access-Control-Allow-Origin', 'https://rusinovanton.github.io/');
+  ctx.response.set('Access-Control-Allow-Origin', 'https://rusinovanton.github.io');
 
   if (!matchRequest(ctx)) {
     return;

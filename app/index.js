@@ -25,7 +25,7 @@ class SlackAutoInvite {
       method: 'POST',
       mode: 'cors',
       header: new Headers({
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin': 'https://dry-stream-45290.herokuapp.com',
         'Content-Type': 'multipart/form-data',
       }),
     })
