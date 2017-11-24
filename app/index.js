@@ -22,8 +22,12 @@ class SlackAutoInvite {
     this.showMessage({ message: 'loading...' });
     fetch('https://dry-stream-45290.herokuapp.com/slack-invite', {
       body: JSON.stringify({ email: this.input.value }),
-      credentials: 'same-origin',
       method: 'POST',
+      mode: 'cors',
+      header: new Headers({
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'multipart/form-data',
+      }),
     })
       .then(this.showMessage.bind(this))
       .catch(this.showError.bind(this));
