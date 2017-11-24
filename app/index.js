@@ -1,3 +1,5 @@
+const parseJson = response => response.json();
+
 class SlackAutoInvite {
   constructor(container) {
     this.container = container;
@@ -29,6 +31,7 @@ class SlackAutoInvite {
         'Content-Type': 'multipart/form-data',
       }),
     })
+      .then(parseJson)
       .then(this.showMessage.bind(this))
       .catch(this.showError.bind(this));
   }
