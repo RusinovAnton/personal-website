@@ -4,15 +4,14 @@
   "description": "Personal website",
   "main": "index.html",
   "scripts": {
-    "start": "./slack-autoinvite-app/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./slack-autoinvite-app/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RusinovAnton/website.git"
   },
   "author": "Rusinov Anton <rusinovantondev@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/RusinovAnton/website/issues"
   },
@@ -20,8 +19,7 @@
   "dependencies": {
     "dotenv": "^4.0.0",
     "koa": "^2.4.1",
-    "koa-body": "^2.5.0",
-    "request": "^2.83.0",
+    "koa-json-body": "^5.3.0",
     "request-promise": "^4.2.2"
   }
 }

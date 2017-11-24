@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000;
 
 const request = require('request-promise');
 const Koa = require('koa');
-const koaBody = require('koa-body');
+const koaBody = require('koa-json-body');
 const app = new Koa();
 
 

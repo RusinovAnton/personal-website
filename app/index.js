@@ -7,14 +7,14 @@ class SlackAutoInvite {
 
   init() {
     this.container.innerHTML = `
-      <form id="autoinvite-form" action="soon" method="POST">
-        <input type="email" name="email" placeholder="Email" />
+      <form id="autoinvite-form">
+        <input type="email" name="email" placeholder="Email" required/>
         <button style="display:none;">Submit</button>
       </form>
     `;
+
     this.input = this.container.querySelector('input');
-    this.container
-      .querySelector('form')
+    this.container.querySelector('form')
       .addEventListener('submit', this.handleSubmit.bind(this));
   }
 
@@ -28,7 +28,7 @@ class SlackAutoInvite {
       mode: 'cors',
       header: new Headers({
         'Access-Control-Allow-Origin': 'https://dry-stream-45290.herokuapp.com',
-        'Content-Type': 'multipart/form-data',
+        'Content-Type': 'application/json',
       }),
     })
       .then(parseJson)
