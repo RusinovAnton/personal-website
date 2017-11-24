@@ -86,4 +86,7 @@ app.use(async (ctx) => {
   }
 });
 
+
+console.log('Listening on port: ' + PORT);
+
 app.listen(PORT);
