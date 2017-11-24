@@ -1,1 +1,1 @@
-web: node ./slack-autoinvite-app/index.js
+web: npm start
