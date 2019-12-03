@@ -18,9 +18,9 @@
   "homepage": "https://github.com/RusinovAnton/website#readme",
   "dependencies": {
     "dotenv": "^4.0.0",
-    "koa": "^2.4.1",
+    "koa": "^2.11.0",
     "koa-json-body": "^5.3.0",
-    "request": "^2.83.0",
-    "request-promise": "^4.2.2"
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
   }
 }
